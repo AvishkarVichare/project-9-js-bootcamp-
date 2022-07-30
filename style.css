@@ -1,0 +1,419 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Red+Rose:wght@700&family=Roboto:wght@700;900&display=swap'); */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+position: relative;
+background-color: #4617fe;
+color: #ffffff;
+/* margin: 8px; */
+height: 573px;
+}
+
+nav{
+  color:#feeffe;
+  display: flex;
+  position: absolute;
+  right: 0;
+  gap: 35px;
+  padding: 25px 0;
+  margin-right: 70px;
+  align-items: center;
+  font-size: 15px;
+}
+
+.nav-item-active{
+  color: #4617fe;
+  border-radius: 2px;
+  background-color: #feeffe;
+  font-weight: 700;
+  padding: 3px 9px;
+}
+
+nav svg{
+  height: 20px;
+  width: 20px;
+}
+
+.logo{
+  margin: 55px 70px;
+  height: 55px;
+}
+
+
+.header-text{
+  margin-top: 50px;
+  margin-left: 70px;
+
+}
+
+.header-text>img{
+  width: 50px;
+}
+
+.header-text>h2{
+  margin-top: 10px;
+  font-size: 2.9rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.header-text>p{
+  color:#feeffe;
+  font-size: 17px;
+}
+
+
+
+
+
+
+.header-image{
+  height: 615px;
+  position: absolute;
+  top: 15%;
+  right: 0;
+}
+
+
+/* companies  */
+
+.companies{
+  display: flex;
+  gap: 50px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+
+.companies>a{
+  text-decoration: none;
+  color: #000;
+  font-family: 'Righteous';
+
+}
+
+/* api section  */
+
+.api{
+  margin-left: 70px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.api-heading{
+  font-family: 'Poppins';
+  font-size:2.8rem;
+  font-weight: 900;
+}
+
+
+
+.cards{
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* align-items: flex-start; */
+  position: relative;
+  right: 20px;
+}
+
+
+.cards::after{
+  color: #ffffff;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+content: ">";
+/* display: block; */
+position: absolute;
+height: 50px;
+width: 50px;
+background-color: #4617fe;
+right: -2%;
+align-self: center;
+border-radius: 50%;
+}
+
+.cards>div{
+  margin-top: 20px;
+  /* border: 2px solid black; */
+  width: inherit;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+border-radius: 10px;
+}
+
+.cards>div>p{
+  font-size: 15px;
+  font-family: 'Poppins';
+
+}
+
+.card{
+
+}
+
+.card-active{
+  box-shadow: 4px 5px 15px -5px #1f1f1f;
+
+
+}
+
+.card-active>h3{
+  color: #4617fe;
+
+}
+
+
+.card-logo{
+  height: 55px;
+  width: 55px;
+}
+
+
+/* blog section  */
+
+.blog-heading h1{ 
+  margin-top:100px ;
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-left: 70px;
+}
+
+
+.blog-cards{
+  margin-left: 70px;
+  display:flex;
+  /* flex-wrap: wrap; */
+  gap: 55px;
+
+  
+}
+
+.blog-card{
+  border-radius: 10px;
+  border-top-left-radius: 40%;
+  padding-right: 30px;
+  box-shadow: 4px 5px 15px -5px #1f1f1f;
+  /* width: 100%; */
+  display: grid;
+    grid-template-areas: 
+  'image image b-content b-content b-content'
+  'image image b-content b-content b-content'
+  'image image b-bottom author author';
+  align-items: center;
+  gap: 20px;
+}
+
+.blog-image{
+  grid-area: image;
+  margin-right: 30px;
+  height: 340px;
+
+}
+
+.blog-image>img{
+  height: 340px;
+}
+
+.blog-content{
+  grid-area: b-content;
+}
+
+.blog-bottom{
+  grid-area: b-bottom;
+}
+
+.blog-author{
+  grid-area: author;
+}
+
+
+/* FAQ SECTION */
+
+.faq-section{
+  height: 370px;
+  background-color: #e9edff;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-content{
+  margin-left: 70px;
+}
+
+.faq-content>h2{
+  margin-top: 35px;
+
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+
+.faq-content>h4{
+  font-size: 14px;
+}
+
+.faq-content>h4:nth-child(3){
+  margin-top: 30px;
+  font-size: 15px;
+
+}
+
+.faq-content>button{
+  margin-top: 18px;
+  color: #ffffff;
+  background-color: #4617fe;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.faq-section img{
+ width: 600px;
+  height: 100%;
+}
+
+
+/* download section  */
+
+.download-section{
+  margin:0 70px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 20px 0;
+  align-items: flex-end;
+
+}
+
+.download-content>h1{
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
+.download-content>h1>span{
+  font-weight: 400;
+}
+
+.download-email>form{
+  display: flex;
+  align-items: center;
+}
+
+.download-email>form>button{
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #4617fe;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 40px;
+  height: 60px;
+  z-index: 2;
+}
+
+.download-email>form>input{
+  position: relative;
+  left: 185px;
+  /* z-index: 1; */
+  width: 700px;
+  background-color: #e9edff;
+  border: none;
+  padding: 5px 50px;
+  height: 70px;
+  border-radius: 40px;
+
+}
+
+.download-email>form>input::placeholder{
+  font-size: 15px;
+  color: #000000;
+}
+
+/* footer-section */
+.footer-section{
+  margin-top: 100px;
+  padding: 75px 70px;
+  background-color: #4617fe;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo{
+  height: 55px;
+}
+
+.list{
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  gap: 29px;
+  color:#feeffe;
+  font-size: 14px;  
+}
+
+.list>li:nth-child(2)~li{
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.list>li:nth-child(2)~li::before{
+
+  content: "";
+  display: block;
+  height: 12px;
+  width: .5px;
+  background-color:#feeffe;
+
+
+}
+
+.footer-logos{
+  margin: 0 8px;
+}
+
+.logos-list{
+  display: flex;
+  list-style: none;
+  gap: 17px;
+  color: #e9edff;
+  font-size: 14px;  
+  margin-top: 40px;
+
+
+}
+
+
+.logos-list>li:first-child~li{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logos-list>li:first-child~li::before{
+  content:"";
+  display: block;
+  height:12px;
+  width:.5px;
+  background-color:rgb(238, 238, 255);
+}
